@@ -1,3 +1,3 @@
 # WebBrowserComponent
 
-Web browser interoperability library - under construction
+Extends JavaScript runtime in Blazor to interact with web browsers.

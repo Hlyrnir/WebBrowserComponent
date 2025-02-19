@@ -1,4 +1,7 @@
 ﻿using Microsoft.JSInterop;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace WebBrowserComponent
 {

@@ -1,18 +1,28 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
+    <AssemblyName>WebBrowserComponent</AssemblyName>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <ImplicitUsings>disable</ImplicitUsings>
   </PropertyGroup>
 
-
+  <PropertyGroup>
+	<PackageId>$(AssemblyName)</PackageId>
+	<PackageVersion>0.1.0</PackageVersion>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<PackageTags>Blazor Webassembly, Web browser</PackageTags>
+	<Description>Extends JavaScript runtime in Blazor to interact with web browsers.</Description>
+	<RepositoryUrl>https://github.com/Hlyrnir/WebBrowserComponent</RepositoryUrl>
+	<Authors>Hlyrnir</Authors>
+  </PropertyGroup>
+	
   <ItemGroup>
-    <SupportedPlatform Include="browser" />
+	<SupportedPlatform Include="browser" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.12" />
+	<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.12" />
   </ItemGroup>
 
 </Project>
